@@ -1,0 +1,16 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      - API_KEY=${API_KEY}
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    command: ["npm", "start"]

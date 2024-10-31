@@ -1,0 +1,4 @@
+# .gitignore
+.env
+/frontend/template/package.json
+/frontend/template/node_modules
